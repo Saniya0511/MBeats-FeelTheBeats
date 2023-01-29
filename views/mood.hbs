@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="shortcut icon" href="../img/log.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detect Your Mood</title>
+    <link rel="stylesheet" href="../style/login-register.css">
+    <link rel="stylesheet" href="../style/mood.css">
+    <script defer src="../script/face-api.min.js"></script>
+    <script defer src="../script/mood.js"></script>
+</head>
+
+<body>
+    <form action="/mood" method="post">
+        <div id="photo">
+            <input type="text" name="moodtype" id="mood">
+            <video id="video" autoplay muted></video>
+            <canvas id="canvasreg" name="img" height="215"></canvas>
+        </div>
+        <div id="button">
+            <input type="button" class="btn" id="click-photo" value="Capture Image"></input>
+
+            <button id="apply" class="btn" type="submit" value="Signup" disabled>Apply</button>
+        </div>
+
+    </form>
+</body>
+
+</html>
